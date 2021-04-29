@@ -222,7 +222,7 @@ header {
   }    
   input[type=email], select, textarea {    
     width: 50%;    
-st    padding: 12px;    
+    padding: 12px;    
     border: 1px solid rgb(70, 68, 68);    
     border-radius: 4px;    
     resize: vertical;    
