@@ -1,0 +1,81 @@
+
+
+body { 
+	font-family: segoe-ui_normal,Segoe UI,Segoe,Segoe WP,Helvetica Neue,Helvetica,sans-serif;
+	display: grid;
+	grid-template-areas: 
+    "header header header"
+    "nav section aside"
+    "footer footer footer";
+	grid-template-rows: 80px 1fr 50px;
+	grid-template-columns: 15% 1fr 18%;
+	grid-gap: 5px;
+  height: 100vh;
+  margin: 10px;  
+}
+
+header {
+	background-image:linear-gradient(rgb(161, 134, 12),rgb(208, 83, 219));
+	grid-area: header;
+}
+
+nav {
+	background: #C9BFBF;
+	grid-area: nav; 
+}
+
+section {
+	
+	grid-area: section;    
+}
+
+  .gallery {
+	border: 3px solid rgb(252, 251, 249);
+	max-width: 1000px;
+	margin: auto;
+	background-image:linear-gradient(rgb(201, 188, 15),rgb(226, 48, 57),rgb(208, 83, 219));
+  }
+  
+  .gallery {
+	padding: 1px;
+	/* padding: 0.4vw; */
+	font-size: 0;
+	flex-flow: row wrap;
+	display: flex;
+  }
+  
+  .gallery div {
+	flex: auto;
+	width: 200px;
+	margin: 0.5vw;
+  }
+  
+  .gallery div img {
+	width: 100%;
+	height: 80%;
+  }
+   
+  img {
+	filter: grayscale(10%);
+	transition: all .3s ease;
+  }
+  
+  img:hover {
+	filter: grayscale(0);
+	filter: saturate(1.5);
+	box-shadow: 10px 10px 10px;
+  }
+
+aside {
+	background: #C9C9C9;
+	grid-area: aside; 
+}
+
+footer {
+	background: #707070;
+	grid-area: footer;
+}
+
+header, nav, section, aside, footer {
+	padding: 5px;
+}
