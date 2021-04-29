@@ -15,14 +15,45 @@ body {
 }
 
 header {
-	background-image:linear-gradient(rgb(161, 134, 12),rgb(208, 83, 219));
+	background-image:linear-gradient(rgb(206, 197, 155),rgb(131, 113, 133));
 	grid-area: header;
+	text-align: center;
+	text-decoration: underline;
+	color: #f8f8ef;
+	font-weight: bold;
 }
 
 nav {
 	background: #C9BFBF;
 	grid-area: nav; 
 }
+
+li{
+	list-style: none;
+	padding-top: 30px;
+	display: block;
+}
+
+ li:hover{
+	color: orange;
+	
+}
+
+a:link, a:visited {
+	background-color: white;
+	color: black;
+	border: 2px solid black;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+  }
+  
+  a:hover, a:active {
+	background-color: black;
+	border: 2px solid black;
+	color: orangered;
+  }
 
 section {
 	
@@ -34,11 +65,11 @@ section {
 	max-width: 1000px;
 	margin: auto;
 	background-image:linear-gradient(rgb(201, 188, 15),rgb(226, 48, 57),rgb(208, 83, 219));
+	
   }
   
   .gallery {
 	padding: 1px;
-	/* padding: 0.4vw; */
 	font-size: 0;
 	flex-flow: row wrap;
 	display: flex;
@@ -48,17 +79,7 @@ section {
 	flex: auto;
 	width: 200px;
 	margin: 0.5vw;
-  }
-  
-  .gallery div img {
-	width: 100%;
-	height: 80%;
-  }
-   
-  img {
-	filter: grayscale(10%);
-	transition: all .3s ease;
-  }
+  }git 
   
   img:hover {
 	filter: grayscale(0);
