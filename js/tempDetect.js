@@ -1,15 +1,15 @@
 // covid temperature test
 
-let temp = 33;
-
-if (temp <=33 && temp ==35){
-    console.log("Normal temperature");
-}
-else if(temp >= 37){
-    console.log("Test for COVID");
-}
-
-else{
-    console.log("Please watch your temperature");
+function testCovid(temp){
+    let results;
+    if (temp <=33){
+        result = 'Normal temperature';
+    }
+    else if(temp ==35){
+        result = 'please watch your temperature';
 }
 
+return result;
+}
+
+console.log(testCovid(+2));
